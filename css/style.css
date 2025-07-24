@@ -82,3 +82,33 @@ nav.principal ul {
   border-radius: 8px;
   margin-bottom: 20px;
 }
+
+/*padrão para desktop*/
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/*para telas com largura até 600px*/
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /*links/botões ficarem maiores e fáceis de clicar*/
+  a, button {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+}
